@@ -33,7 +33,7 @@ The Currency Converter website provides a straightforward and efficient way to c
 -**Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/currency-converter.git
+   https://github.com/tahaghous16/Currency-Converter.git
 
 
 
