@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-5 my-4">
+      <h1 class="text-center mb-4">
+        Currency <span class="badge bg-dark rounded-pill">Converter</span>
+      </h1>
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-6">
+          <div class="card p-4 shadow-sm">
+            <form>
+              <div class="form-group mb-3">
+                <label>Enter Amount</label>
+                <input
+                  type="number"
+                  id="amount"
+                  class="form-control"
+                  value="1"
+                />
+              </div>
+              <div id="form">
+                <div class="form-group mb-3">
+                  <label>From</label>
+                  <div class="input-group">
+                    <img
+                      src="https://flagsapi.com/US/flat/64.png"
+                      alt="Country Flag"
+                      class="flag-icon"
+                    />
+                    <select id="from" class="form-select rounded-pill"></select>
+                  </div>
+                </div>
+                <div class="text-center my-3">
+                  <div id="icon">
+                    <i
+                      class="fa-duotone fa-solid fa-right-left fa-lg"
+                      style="
+                        --fa-primary-color: #1f513b;
+                        --fa-secondary-color: #1f513b;
+                      "
+                    ></i>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label>To</label>
+                  <div class="input-group">
+                    <img
+                      src="https://flagsapi.com/PK/flat/64.png"
+                      alt="Country Flag"
+                      class="flag-icon"
+                    />
+                    <select id="to" class="form-select rounded-pill"></select>
+                  </div>
+                </div>
+              </div>
+              <div id="msg" class="text-center mb-3"></div>
+              <button type="button" class="btn btn-blue w-100 text-light rounded-pill">
+                Get Exchange Rate
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

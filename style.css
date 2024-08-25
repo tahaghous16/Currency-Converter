@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6482ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+}
+
+.card {
+  background-color: #e2e2b6;
+  border-radius: 15px;
+}
+
+.btn-blue {
+  background-color: #03346e !important;
+  color: white;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-control,
+.form-select {
+  height: 3rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.flag-icon {
+  width: 2rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+#icon {
+  margin: 0 2px 0 2px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+#msg {
+  font-weight: bold;
+  color: #32012f;
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  font-size: 1rem;
+  height: 3rem;
+  border-radius: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+    height: 2.5rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+    height: 2.5rem;
+  }
+
+  .flag-icon {
+    width: 1.5rem;
+  }
+}
+
+#form {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
